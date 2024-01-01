@@ -16,6 +16,10 @@ spring:
           uri: lb://monster-security
           predicates:
             - Path=/monster-security/**
+        - id: monster-dyson-sphere-program
+          uri: lb://monster-dyson-sphere-program
+          predicates:
+            - Path=/monster-dyson-sphere-program/**
 eureka:
   client:
     service-url:
